@@ -1,0 +1,164 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d555eb24a318a44eb174d28f1a97e65, type: 3}
+  m_Name: EnemyCollection1
+  m_EditorClassIdentifier: 
+  EnemyVariations:
+  - WaveName: 1
+    EnemyArrayHolder:
+    - NumberOfEnemiesInWave: 100
+      Enemy: {fileID: 11400000, guid: d5f9322c7130567439098c62a7e387f3, type: 2}
+  - WaveName: 2
+    EnemyArrayHolder:
+    - NumberOfEnemiesInWave: 40
+      Enemy: {fileID: 11400000, guid: d5f9322c7130567439098c62a7e387f3, type: 2}
+    - NumberOfEnemiesInWave: 10
+      Enemy: {fileID: 11400000, guid: 12464039ea4d4374097ef230e923902f, type: 2}
+    - NumberOfEnemiesInWave: 40
+      Enemy: {fileID: 11400000, guid: d5f9322c7130567439098c62a7e387f3, type: 2}
+    - NumberOfEnemiesInWave: 10
+      Enemy: {fileID: 11400000, guid: 12464039ea4d4374097ef230e923902f, type: 2}
+  - WaveName: 3
+    EnemyArrayHolder:
+    - NumberOfEnemiesInWave: 30
+      Enemy: {fileID: 11400000, guid: d5f9322c7130567439098c62a7e387f3, type: 2}
+    - NumberOfEnemiesInWave: 39
+      Enemy: {fileID: 11400000, guid: 12464039ea4d4374097ef230e923902f, type: 2}
+    - NumberOfEnemiesInWave: 30
+      Enemy: {fileID: 11400000, guid: d5f9322c7130567439098c62a7e387f3, type: 2}
+    - NumberOfEnemiesInWave: 1
+      Enemy: {fileID: 11400000, guid: 869596d12b0bd7942996be18b00ff160, type: 2}
+  - WaveName: 4
+    EnemyArrayHolder:
+    - NumberOfEnemiesInWave: 18
+      Enemy: {fileID: 11400000, guid: d5f9322c7130567439098c62a7e387f3, type: 2}
+    - NumberOfEnemiesInWave: 60
+      Enemy: {fileID: 11400000, guid: 12464039ea4d4374097ef230e923902f, type: 2}
+    - NumberOfEnemiesInWave: 18
+      Enemy: {fileID: 11400000, guid: d5f9322c7130567439098c62a7e387f3, type: 2}
+    - NumberOfEnemiesInWave: 2
+      Enemy: {fileID: 11400000, guid: 869596d12b0bd7942996be18b00ff160, type: 2}
+  - WaveName: 5
+    EnemyArrayHolder:
+    - NumberOfEnemiesInWave: 6
+      Enemy: {fileID: 11400000, guid: 869596d12b0bd7942996be18b00ff160, type: 2}
+  - WaveName: 6
+    EnemyArrayHolder:
+    - NumberOfEnemiesInWave: 1
+      Enemy: {fileID: 11400000, guid: eea99fc2cc4d2034993d02176690173b, type: 2}
+  - WaveName: 7
+    EnemyArrayHolder:
+    - NumberOfEnemiesInWave: 30
+      Enemy: {fileID: 11400000, guid: d5f9322c7130567439098c62a7e387f3, type: 2}
+    - NumberOfEnemiesInWave: 25
+      Enemy: {fileID: 11400000, guid: 12464039ea4d4374097ef230e923902f, type: 2}
+    - NumberOfEnemiesInWave: 30
+      Enemy: {fileID: 11400000, guid: d5f9322c7130567439098c62a7e387f3, type: 2}
+    - NumberOfEnemiesInWave: 6
+      Enemy: {fileID: 11400000, guid: 869596d12b0bd7942996be18b00ff160, type: 2}
+    - NumberOfEnemiesInWave: 2
+      Enemy: {fileID: 11400000, guid: eea99fc2cc4d2034993d02176690173b, type: 2}
+  - WaveName: 7
+    EnemyArrayHolder:
+    - NumberOfEnemiesInWave: 30
+      Enemy: {fileID: 11400000, guid: d5f9322c7130567439098c62a7e387f3, type: 2}
+    - NumberOfEnemiesInWave: 20
+      Enemy: {fileID: 11400000, guid: 12464039ea4d4374097ef230e923902f, type: 2}
+    - NumberOfEnemiesInWave: 30
+      Enemy: {fileID: 11400000, guid: d5f9322c7130567439098c62a7e387f3, type: 2}
+    - NumberOfEnemiesInWave: 4
+      Enemy: {fileID: 11400000, guid: 869596d12b0bd7942996be18b00ff160, type: 2}
+    - NumberOfEnemiesInWave: 2
+      Enemy: {fileID: 11400000, guid: eea99fc2cc4d2034993d02176690173b, type: 2}
+  - WaveName: 7
+    EnemyArrayHolder:
+    - NumberOfEnemiesInWave: 30
+      Enemy: {fileID: 11400000, guid: d5f9322c7130567439098c62a7e387f3, type: 2}
+    - NumberOfEnemiesInWave: 20
+      Enemy: {fileID: 11400000, guid: 12464039ea4d4374097ef230e923902f, type: 2}
+    - NumberOfEnemiesInWave: 30
+      Enemy: {fileID: 11400000, guid: d5f9322c7130567439098c62a7e387f3, type: 2}
+    - NumberOfEnemiesInWave: 4
+      Enemy: {fileID: 11400000, guid: 869596d12b0bd7942996be18b00ff160, type: 2}
+    - NumberOfEnemiesInWave: 2
+      Enemy: {fileID: 11400000, guid: eea99fc2cc4d2034993d02176690173b, type: 2}
+  - WaveName: 7
+    EnemyArrayHolder:
+    - NumberOfEnemiesInWave: 30
+      Enemy: {fileID: 11400000, guid: d5f9322c7130567439098c62a7e387f3, type: 2}
+    - NumberOfEnemiesInWave: 20
+      Enemy: {fileID: 11400000, guid: 12464039ea4d4374097ef230e923902f, type: 2}
+    - NumberOfEnemiesInWave: 30
+      Enemy: {fileID: 11400000, guid: d5f9322c7130567439098c62a7e387f3, type: 2}
+    - NumberOfEnemiesInWave: 4
+      Enemy: {fileID: 11400000, guid: 869596d12b0bd7942996be18b00ff160, type: 2}
+    - NumberOfEnemiesInWave: 2
+      Enemy: {fileID: 11400000, guid: eea99fc2cc4d2034993d02176690173b, type: 2}
+  - WaveName: 7
+    EnemyArrayHolder:
+    - NumberOfEnemiesInWave: 30
+      Enemy: {fileID: 11400000, guid: d5f9322c7130567439098c62a7e387f3, type: 2}
+    - NumberOfEnemiesInWave: 20
+      Enemy: {fileID: 11400000, guid: 12464039ea4d4374097ef230e923902f, type: 2}
+    - NumberOfEnemiesInWave: 30
+      Enemy: {fileID: 11400000, guid: d5f9322c7130567439098c62a7e387f3, type: 2}
+    - NumberOfEnemiesInWave: 4
+      Enemy: {fileID: 11400000, guid: 869596d12b0bd7942996be18b00ff160, type: 2}
+    - NumberOfEnemiesInWave: 2
+      Enemy: {fileID: 11400000, guid: eea99fc2cc4d2034993d02176690173b, type: 2}
+  - WaveName: 7
+    EnemyArrayHolder:
+    - NumberOfEnemiesInWave: 30
+      Enemy: {fileID: 11400000, guid: d5f9322c7130567439098c62a7e387f3, type: 2}
+    - NumberOfEnemiesInWave: 20
+      Enemy: {fileID: 11400000, guid: 12464039ea4d4374097ef230e923902f, type: 2}
+    - NumberOfEnemiesInWave: 30
+      Enemy: {fileID: 11400000, guid: d5f9322c7130567439098c62a7e387f3, type: 2}
+    - NumberOfEnemiesInWave: 4
+      Enemy: {fileID: 11400000, guid: 869596d12b0bd7942996be18b00ff160, type: 2}
+    - NumberOfEnemiesInWave: 2
+      Enemy: {fileID: 11400000, guid: eea99fc2cc4d2034993d02176690173b, type: 2}
+  - WaveName: 7
+    EnemyArrayHolder:
+    - NumberOfEnemiesInWave: 30
+      Enemy: {fileID: 11400000, guid: d5f9322c7130567439098c62a7e387f3, type: 2}
+    - NumberOfEnemiesInWave: 20
+      Enemy: {fileID: 11400000, guid: 12464039ea4d4374097ef230e923902f, type: 2}
+    - NumberOfEnemiesInWave: 30
+      Enemy: {fileID: 11400000, guid: d5f9322c7130567439098c62a7e387f3, type: 2}
+    - NumberOfEnemiesInWave: 4
+      Enemy: {fileID: 11400000, guid: 869596d12b0bd7942996be18b00ff160, type: 2}
+    - NumberOfEnemiesInWave: 2
+      Enemy: {fileID: 11400000, guid: eea99fc2cc4d2034993d02176690173b, type: 2}
+  - WaveName: 7
+    EnemyArrayHolder:
+    - NumberOfEnemiesInWave: 30
+      Enemy: {fileID: 11400000, guid: d5f9322c7130567439098c62a7e387f3, type: 2}
+    - NumberOfEnemiesInWave: 20
+      Enemy: {fileID: 11400000, guid: 12464039ea4d4374097ef230e923902f, type: 2}
+    - NumberOfEnemiesInWave: 30
+      Enemy: {fileID: 11400000, guid: d5f9322c7130567439098c62a7e387f3, type: 2}
+    - NumberOfEnemiesInWave: 4
+      Enemy: {fileID: 11400000, guid: 869596d12b0bd7942996be18b00ff160, type: 2}
+    - NumberOfEnemiesInWave: 2
+      Enemy: {fileID: 11400000, guid: eea99fc2cc4d2034993d02176690173b, type: 2}
+  - WaveName: 7
+    EnemyArrayHolder:
+    - NumberOfEnemiesInWave: 30
+      Enemy: {fileID: 11400000, guid: d5f9322c7130567439098c62a7e387f3, type: 2}
+    - NumberOfEnemiesInWave: 20
+      Enemy: {fileID: 11400000, guid: 12464039ea4d4374097ef230e923902f, type: 2}
+    - NumberOfEnemiesInWave: 30
+      Enemy: {fileID: 11400000, guid: d5f9322c7130567439098c62a7e387f3, type: 2}
+    - NumberOfEnemiesInWave: 4
+      Enemy: {fileID: 11400000, guid: 869596d12b0bd7942996be18b00ff160, type: 2}
+    - NumberOfEnemiesInWave: 2
+      Enemy: {fileID: 11400000, guid: eea99fc2cc4d2034993d02176690173b, type: 2}

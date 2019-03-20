@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70e55766e4f128a4b92d5bfedd562fe3, type: 3}
+  m_Name: MegaBossParams
+  m_EditorClassIdentifier: 
+  MoveSpeed: 2
+  AttackSpeed: 2
+  AttackRange: 2
+  Damage: 25
+  Health: 700
+  ManaWorth: 100
+  CurrencyWorth: 150
+  HealthGainPerLevel: 100
+  GameObjectDestroyTime: 10
+  DeathThrust: 15000
+  Prefab: {fileID: 1518399418620362, guid: 1f9a7322cb48be5408e7cb4c2560b501, type: 2}
+  WaitBeforeThisType: 10
