@@ -31,4 +31,6 @@ public class EnemyParamsSO : ScriptableObject {
     public GameObject Prefab;
 
     public int WaitBeforeThisType;
+
+    public Color DeathColor;
 }

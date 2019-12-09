@@ -16,6 +16,8 @@ public class EnemyMainScript : MonoBehaviour {
     [SerializeField]
     private float thrust = 10.0f;
     public int EnemyIndex = 0;
+    [SerializeField]
+    private Color DeathColor;
 
 
     [Header(" ")]
@@ -44,12 +46,14 @@ public class EnemyMainScript : MonoBehaviour {
     /// </summary>
     void Start()
     {
+
         health = Collection.EnemyVariations[WaveCounter.WaveNumber - 1].EnemyArrayHolder[EnemyIndex].Enemy.Health;
         manaWorth = Collection.EnemyVariations[WaveCounter.WaveNumber - 1].EnemyArrayHolder[EnemyIndex].Enemy.ManaWorth;
         currencyWorth = Collection.EnemyVariations[WaveCounter.WaveNumber - 1].EnemyArrayHolder[EnemyIndex].Enemy.CurrencyWorth;
         healthGain = Collection.EnemyVariations[WaveCounter.WaveNumber - 1].EnemyArrayHolder[EnemyIndex].Enemy.HealthGainPerLevel;
         thrust = Collection.EnemyVariations[WaveCounter.WaveNumber - 1].EnemyArrayHolder[EnemyIndex].Enemy.DeathThrust;
         DeathBounceTime = Collection.EnemyVariations[WaveCounter.WaveNumber - 1].EnemyArrayHolder[EnemyIndex].Enemy.GameObjectDestroyTime;
+        DeathColor = Collection.EnemyVariations[WaveCounter.WaveNumber - 1].EnemyArrayHolder[EnemyIndex].Enemy.DeathColor;
 
         health += healthGain * WaveCounter.WaveNumber;
     }
@@ -69,14 +73,17 @@ public class EnemyMainScript : MonoBehaviour {
             ManaCounter.AddNumber(manaWorth);
 
             CurrencyCounter.AddNumber(currencyWorth);
-  
+
+            
             Vector2 flightDirection = new Vector2(Random.Range(-0.5f, 0.5f), Random.Range(0.75f, 1.0f));
             GetComponent<EnemyMove>().enabled = false;
             rb2DAsset.constraints = RigidbodyConstraints2D.None;
             GetComponent<CircleCollider2D>().enabled = false;
             rb2DAsset.AddForce(flightDirection * thrust);
-            rb2DAsset.gravityScale = 5;
+            rb2DAsset.gravityScale = 0.5f;
             IsDead = true;
+            GetComponent<SpriteRenderer>().color = DeathColor;
+
             StartCoroutine(DeathBounce());
         }
     }

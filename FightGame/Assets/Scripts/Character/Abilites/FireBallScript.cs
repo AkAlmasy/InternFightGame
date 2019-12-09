@@ -7,7 +7,7 @@ public class FireBallScript : MonoBehaviour {
     public float Speed = 5f;
     private bool FromRight = true;
     [SerializeField]
-    private float FireBallDestroyTime = 2f;
+    private readonly float FireBallDestroyTime = 2f;
     public Transform player => Player.transform;
     [SerializeField]
     private PlayerAttack PlayerAttackAsset;
@@ -15,6 +15,7 @@ public class FireBallScript : MonoBehaviour {
     public GameObject Player;
     [SerializeField]
     private GameObject FireBallHitEffect;
+  
 
 
 
@@ -66,7 +67,8 @@ public class FireBallScript : MonoBehaviour {
         if (collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "Boss" || collision.gameObject.tag == "MegaBoss")
         {
             collision.gameObject.GetComponent<EnemyMainScript>().TakeDamage(PlayerAttackAsset.FireBallDamage);
-            Instantiate(FireBallHitEffect,collision.gameObject.GetComponent<Transform>().transform.position, transform.rotation);
+            GameObject newFireballEffect = Instantiate(FireBallHitEffect,collision.gameObject.GetComponent<Transform>().transform.position, transform.rotation);
+            Destroy(newFireballEffect, FireBallDestroyTime);
         }else if (collision.gameObject.tag == "Ground")
         {
             Destroy(gameObject);
@@ -81,6 +83,7 @@ public class FireBallScript : MonoBehaviour {
     IEnumerator FireBallDestroy()
     {
         yield return new WaitForSeconds(FireBallDestroyTime);
+        
         Destroy(gameObject);
     }
 }

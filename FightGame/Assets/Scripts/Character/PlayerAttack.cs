@@ -142,11 +142,20 @@ public class PlayerAttack : MonoBehaviour {
         {
             enemiesToDamage[i].GetComponent<EnemyMainScript>().TakeDamage(BaseAttackDamage);
             if (enemiesToDamage[i].tag == "Enemy" || enemiesToDamage[i].tag == "Sprinter")
-                Instantiate(BloodSplash1, enemiesToDamage[i].transform.position, transform.rotation);
+            {
+                GameObject newBloodSplash = Instantiate(BloodSplash1, enemiesToDamage[i].transform.position, transform.rotation);
+                Destroy(newBloodSplash, 3);
+            }
             if (enemiesToDamage[i].tag == "Boss")
-                Instantiate(BloodSplashBoss, enemiesToDamage[i].transform.position, transform.rotation);
+            {
+                GameObject newBloodSplash = Instantiate(BloodSplashBoss, enemiesToDamage[i].transform.position, transform.rotation);
+                Destroy(newBloodSplash, 3);
+            }
             if (enemiesToDamage[i].tag == "MegaBoss")
-                Instantiate(BloodSplashMegaBoss, enemiesToDamage[i].transform.position, transform.rotation);
+            {
+                GameObject newBloodSplash = Instantiate(BloodSplashMegaBoss, enemiesToDamage[i].transform.position, transform.rotation);
+                Destroy(newBloodSplash, 3);
+            }
         }
         timeBtwAttack = StartTimeBtwAttack;
     }

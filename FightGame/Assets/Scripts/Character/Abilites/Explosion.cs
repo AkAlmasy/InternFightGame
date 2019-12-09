@@ -41,7 +41,8 @@ public class Explosion : MonoBehaviour {
         if (collision.gameObject.tag == "Enemy" || collision.gameObject.tag == "Boss" || collision.gameObject.tag == "MegaBoss" || collision.gameObject.tag == "Sprinter")
         {
             collision.gameObject.GetComponent<EnemyMainScript>().TakeDamage(PlayerAttackAsset.ExplosionDamage);
-            Instantiate(BloodSplash1, collision.gameObject.GetComponent<Transform>().position, transform.rotation);
+            GameObject newBloodSplash = Instantiate(BloodSplash1, collision.gameObject.GetComponent<Transform>().position, transform.rotation);
+            Destroy(newBloodSplash, 3);
         }
     }
 
